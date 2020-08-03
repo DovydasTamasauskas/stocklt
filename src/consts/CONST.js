@@ -1,0 +1,37 @@
+// https://nasdaqbaltic.com/statistics/lt/instrument/LT0000102337/trading/chart_price_json?start=2019-07-31&end=2020-07-31&historical=0&_=1596391222511
+export const BACKEND_HOST = "https://nasdaqbaltic.com/statistics/lt/instrument";
+export const BACKEND_HOST_END =
+  "trading/chart_price_json?start=2019-07-31&end=2020-07-31&historical=0&_=1596391222511";
+export const STOCKS = [
+  ["LT0000102337", "Apranga"],
+  ["EE3100034653", "Arco Vara"],
+  ["LT0000127466", "AUGA group"],
+  ["EE3100145616", "Baltika"],
+  ["EE3100007857", "Coop Pank"],
+  ["EE3100016965", "Ekspress Grupp"],
+  ["EE3100127242", "EfTEN Real Estate Fund III"],
+  ["LV0000100659", "Grindeks"],
+  ["EE3100004250", "Harju Elekter"],
+  ["LV0000101590", "HansaMatrix"],
+  ["LT0000111650", "Klaipėdos nafta"],
+  ["EE3100073644", "LHV Group"],
+  ["LT0000128092", "Linas Agro Group"],
+  ["EE3100098328", "Merko Ehitus"],
+  ["EE3100039496", "Nordecon"],
+  ["LT0000131872", "Novaturas"],
+  ["LV0000100501", "Olainfarm"],
+  ["EE3100006040", "Pro Kapital Grupp"],
+  ["EE3100101031", "PRFoods"],
+  ["LT0000101446", "Panevėžio statybos trestas"],
+  ["LT0000111676", "Pieno žvaigždės"],
+  ["LT0000100372", "Rokiškio sūris"],
+  ["LT0000102253", "Šiaulių bankas"],
+  ["LV0000101129", "SAF Tehnika"],
+  ["EE3100001751", "Silvano Fashion Group"],
+  ["EE3100004466", "Tallink Grupp"],
+  ["LT0000123911", "Telia Lietuva"],
+  ["EE0000001105", "Tallinna Kaubamaja Grupp"],
+  ["EE3100021635", "Tallinna Sadam"],
+  ["EE3100026436", "Tallinna Vesi"],
+  ["LT0000127508", "Vilkyškių pieninė"],
+];
