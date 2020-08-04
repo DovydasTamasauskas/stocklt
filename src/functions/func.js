@@ -16,3 +16,19 @@ export const getTimeSeriesCandle = async (endpoint) => {
     dataOld: getDataOld(date[date.length - 1]),
   };
 };
+
+export const getDateToString = () => {
+  var dateNow = new Date();
+  dateNow.setDate(dateNow.getDate() - 1);
+  return (
+    dateNow.getFullYear() +
+    "-" +
+    (dateNow.getMonth() > 9
+      ? dateNow.getMonth() + 1
+      : "0" + (dateNow.getMonth() + 1)) +
+    "-" +
+    (dateNow.getDate() > 9
+      ? dateNow.getDate() + 1
+      : "0" + (dateNow.getDate() + 1))
+  );
+};
