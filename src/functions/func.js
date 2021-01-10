@@ -1,4 +1,5 @@
 import axios from "axios";
+import moment from "moment";
 
 const getDataOld = (date) =>
   Math.floor((new Date().getTime() - date) / (24 * 60 * 60 * 1000));
@@ -20,15 +21,5 @@ export const getTimeSeriesCandle = async (endpoint) => {
 export const getDateToString = () => {
   var dateNow = new Date();
   dateNow.setDate(dateNow.getDate() - 1);
-  return (
-    dateNow.getFullYear() +
-    "-" +
-    (dateNow.getMonth() > 9
-      ? dateNow.getMonth() + 1
-      : "0" + (dateNow.getMonth() + 1)) +
-    "-" +
-    (dateNow.getDate() > 9
-      ? dateNow.getDate() + 1
-      : "0" + (dateNow.getDate() + 1))
-  );
+  return moment(dateNow).format('YYYY-MM-DD')
 };
